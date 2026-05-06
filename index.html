@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>App Clima</h1>
+        <div class="busca">
+            <input type="text" id="cidade" placeholder="Digite uma cidade..." style="border-radius: 9px; padding: 10px;">
+            <button id="btn-buscar">Buscar</button>
+        </div>
+
+        <div class="resultado" id="resultado">
+            <div class="clima-card" id="clima-card">
+                <h2 id="nome-cidade"></h2>
+                <p id="descricao"></p>
+                <span id="temperatura"></span>
+                <div class="detalhes">
+                    <p> Umidade: <span id='umidade'></span></p>
+                    <p> Vento: <span id='vento'></span></p>
+                </div> 
+            </div>
+            <p id="erro"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
